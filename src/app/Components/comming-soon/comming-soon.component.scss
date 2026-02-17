@@ -1,0 +1,113 @@
+.coming-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  z-index: 2;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+
+  .highlight {
+    color: #38bdf8;
+    animation: pulse 2s infinite;
+  }
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.time-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  min-width: 80px;
+  animation: floatUp 1s ease forwards;
+
+  span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: block;
+  }
+
+  small {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+}
+
+/* Floating Background Circles */
+.floating-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.15);
+  animation: float 8s ease-in-out infinite;
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle-2 {
+  width: 200px;
+  height: 200px;
+  bottom: 50px;
+  right: 50px;
+  animation-delay: 2s;
+}
+
+.circle-3 {
+  width: 150px;
+  height: 150px;
+  bottom: 150px;
+  left: 30%;
+  animation-delay: 4s;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

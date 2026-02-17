@@ -1,0 +1,39 @@
+<div class="coming-container">
+
+  <div class="content">
+    <div class="img-wrapper h-[400px] rounded-2xl overflow-hidden border">
+        <img class="h-full w-full object-fit" src="images/logo-light.jpeg" alt="Site Logo">
+    </div>
+    <h1 class="title">
+      <span>Coming</span>
+      <span class="highlight">Soon</span>
+    </h1>
+
+    <p class="subtitle">
+      We're building something amazing.
+    </p>
+
+    <div class="countdown" *ngIf="timeLeft as time">
+      <div class="time-box">
+        <span>{{ time.days }}</span>
+        <small>Days</small>
+      </div>
+      <div class="time-box">
+        <span>{{ time.hours }}</span>
+        <small>Hours</small>
+      </div>
+      <div class="time-box">
+        <span>{{ time.minutes }}</span>
+        <small>Minutes</small>
+      </div>
+      <div class="time-box">
+        <span>{{ time.seconds }}</span>
+        <small>Seconds</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-circle circle-1"></div>
+  <div class="floating-circle circle-2"></div>
+  <div class="floating-circle circle-3"></div>
+</div>
