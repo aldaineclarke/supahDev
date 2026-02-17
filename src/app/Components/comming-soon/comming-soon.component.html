@@ -1,10 +1,10 @@
 <div class="coming-container">
 
   <div class="content">
-    <div class="img-wrapper h-[400px] rounded-2xl overflow-hidden border">
+    <div class=" mx-auto img-wrapper h-[200px] w-[200px] lg:h-[400px] lg:w-[400px] rounded-2xl overflow-hidden">
         <img class="h-full w-full object-fit" src="images/logo-light.jpeg" alt="Site Logo">
     </div>
-    <h1 class="title">
+    <h1 class="title text-4xl md:text-[4rem] my-2">
       <span>Coming</span>
       <span class="highlight">Soon</span>
     </h1>
@@ -13,7 +13,7 @@
       We're building something amazing.
     </p>
 
-    <div class="countdown" *ngIf="timeLeft as time">
+    <div class="countdown scale-75 md:scale-100" *ngIf="timeLeft as time">
       <div class="time-box">
         <span>{{ time.days }}</span>
         <small>Days</small>
