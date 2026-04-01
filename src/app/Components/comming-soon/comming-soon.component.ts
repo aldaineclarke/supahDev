@@ -11,7 +11,7 @@ import { interval, Subscription } from 'rxjs';
 export class CommingSoonComponent {
 
   
-  launchDate = new Date('2026-04-01T00:00:00').getTime();
+  launchDate = new Date('2026-05-01T00:00:00').getTime();
 
   timeLeft = {
     days: 0,
